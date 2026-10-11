@@ -1,0 +1,22 @@
+#!/bin/bash
+set -eu
+
+# Simple helper script for a jailbreak screen-res prototype.
+# This is intentionally lightweight and acts as a placeholder for a real tweak implementation.
+
+PLIST_PATH="/var/mobile/Library/Preferences/com.mikhailapanyuk.screenreschanger.plist"
+DEFAULT_VALUE="1170x2532"
+
+if [ ! -f "$PLIST_PATH" ]; then
+    echo "$DEFAULT_VALUE"
+    exit 0
+fi
+
+# Try to read the saved value from the plist.
+VALUE=$(plutil -extract selectedResolution raw "$PLIST_PATH" 2>/dev/null || echo "$DEFAULT_VALUE")
+
+if [ -n "$VALUE" ]; then
+    echo "$VALUE"
+else
+    echo "$DEFAULT_VALUE"
+fi

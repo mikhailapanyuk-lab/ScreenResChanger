@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eu
+
+# Remove any preference state on uninstall.
+rm -f /var/mobile/Library/Preferences/com.mikhailapanyuk.screenreschanger.plist 2>/dev/null || true
+
+exit 0

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>ScreenResChanger</string>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Resolution</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSListItemCell</string>
+            <key>label</key>
+            <string>Selected resolution</string>
+            <key>key</key>
+            <string>selectedResolution</string>
+            <key>default</key>
+            <string>1170x2532</string>
+            <key>values</key>
+            <array>
+                <string>640x1136</string>
+                <string>750x1334</string>
+                <string>828x1792</string>
+                <string>1125x2436</string>
+                <string>1170x2532</string>
+                <string>1242x2688</string>
+                <string>1290x2796</string>
+                <string>1440x3120</string>
+            </array>
+            <key>titles</key>
+            <array>
+                <string>640x1136</string>
+                <string>750x1334</string>
+                <string>828x1792</string>
+                <string>1125x2436</string>
+                <string>1170x2532</string>
+                <string>1242x2688</string>
+                <string>1290x2796</string>
+                <string>1440x3120</string>
+            </array>
+            <key>defaults</key>
+            <string>com.mikhailapanyuk.screenreschanger</string>
+        </dict>
+    </array>
+</dict>
+</plist>

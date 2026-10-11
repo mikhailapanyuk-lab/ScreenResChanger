@@ -1,0 +1,10 @@
+Package: com.mikhailapanyuk.screenreschanger
+Version: 1.0
+Section: Tweaks
+Priority: optional
+Architecture: iphoneos-arm
+Maintainer: Mikhail Apanyuk <mikhailapanyuk@example.com>
+Description: Screen resolution selector for jailbreak devices.
+ Depends: firmware (>= 16.0)
+ Homepage: https://github.com/mikhailapanyuk-lab/ScreenResChanger
+Name: ScreenResChanger

@@ -1,0 +1,14 @@
+#!/bin/bash
+set -eu
+
+# Post-install hook for a jailbreak package prototype.
+# This installs a Settings entry and creates a default preference key.
+mkdir -p /var/mobile/Library/Preferences
+if [ ! -f /var/mobile/Library/Preferences/com.mikhailapanyuk.screenreschanger.plist ]; then
+    plutil -replace selectedResolution -string "1170x2532" /var/mobile/Library/Preferences/com.mikhailapanyuk.screenreschanger.plist 2>/dev/null || true
+fi
+
+# Reload preferences if a loader is available.
+/usr/bin/killall -9 Preferences 2>/dev/null || true
+
+exit 0
